@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Puppies</title>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="jumbotron">
+  <h1>Puppy Collector</h1>
+    <p>You will be given a random number at the start of the game.There are four puppies below. By clicking on a puppy you will add a specific amount to your total score. You will win the game my matching your total score to random number, you lose the game if your total sore goes above the Random Number. The value of each puppy is hidden from you until you click on it. Each time when the game starts, the game will change the value of each puppy.</p>
+<!-- closes jumbotron -->
+</div>
+
+<div class='container'>
+  
+ <!-- Jumbotron --> 
+
+  <div class="row">
+    <div class='col-lg-12'>
+      <div class='card'>
+        <div class='card-header'>Click the a Puppy</div>
+        <div id='puppies'></div><!-- closes puppies -->
+      </div><!-- closes puppy card -->
+    </div><!-- closes column -->
+  </div><!-- closes puppy row -->
+
+<div class="row">
+  
+  <!-- "Your Target Score" Section-->
+  <div class='col-lg-3'>
+    <div class='card'>
+      <div class='card-header'>Target Score</div>
+        <div class='card-body'>
+          <div id='targetScore'></div><!-- 'target score' empty div -->
+        </div><!-- closes "target score' body card  -->
+      </div><!-- "Your Target Score" card-->
+  </div><!-- closes target score column -->
+
+
+  <!-- "Your Score" Section-->
+  <div class='col-lg-3'>
+    <div class='card'>
+      <div class='card-header'>Your Score</div>
+        <div class='card-body'>
+          <div id='yourScore'></div><!-- "your score" empty div-->
+        </div><!-- "your score" card body-->
+      </div><!-- "Your Score" card-->
+  </div> <!-- "Your Score" column-->
+
+  <!-- "Wins" Section-->
+  <div class='col-lg-3'>
+      <div class='card'>
+        <div class='card-header'>Your Wins</div>
+          <div class='card-body'>
+            <div id='wins'></div><!-- "wins" empty div-->
+          </div><!-- "wins" card body-->
+        </div><!-- "wins" card-->
+    </div> <!-- "wins" column-->
+
+  <!-- "Losses" Section-->
+  <div class='col-lg-3'>
+      <div class='card'>
+        <div class='card-header'>Your Losses</div>
+          <div class='card-body'>
+            <div id='losses'></div><!-- "losses" empty div-->
+          </div><!-- "losses" card body-->
+        </div><!-- "losses" card-->
+    </div> <!-- "losses" column-->
+  
+</div><!-- closes second row -->
+
+  <!-- <img src="assets/one.jpg" alt="Puppie1" height="100" width="100" id='one'>
+  <img src="assets/two.jpg" alt="Puppie2" height="100" width="100" id='two'>
+  <img src="assets/three.jpg" alt="Puppie3" height="100" width="100" id='three'>
+  <img src="assets/four.jpg" alt="Puppie4" height="100" width="100" id='four'> -->
+<!-- closes puppies -->
+
+</div>  <!-- closes container --> 
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
